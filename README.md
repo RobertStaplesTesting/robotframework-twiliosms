@@ -1,7 +1,7 @@
 # robotframework-twiliosms
 Robot Framework SMS Verification Test Library using Twilio SMS API
 
-Please see doc/Twiliosms.html for current functionality
+Please see [Keyword Library](https://robertstaplestesting.github.io/robotframework-twiliosms/Twiliosms.html) for current functionality
 
 ## Running the tests from docker 
 ```
