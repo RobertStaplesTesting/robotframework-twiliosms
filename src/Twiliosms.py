@@ -1,10 +1,7 @@
 from twilio.rest import Client
 
 class Twiliosms(object):
-    """A Library used to send twilio 
-
-    This library is only used in an example and it doesn't do anything useful.
-    """
+    """A Library used to send and recieve data from twilio"""
     ROBOT_LIBRARY_SCOPE = 'GLOBAL'
 
     def __init__(self):
