@@ -41,15 +41,23 @@ class Twiliosms(object):
         self._token = auth_token
 
     def send_message(self,
-                    phone_from,
                     phone_to,
-                    message=None
+                    phone_from=None,
+                    messaging_service_sid=None,
+                    body=None,
+                    media_url=None,
+                    **kwargs
                     ):
         """Sends message from your Twilio Account."""
+        if phone_from == None and messaging_service_sid == None:
+            raise ValueError('either phone_from or messaging_service_sid must have value')
+        elif body == None and media_url == None:
+            raise ValueError('either body or media_url must have value')
+
         client = Client(self._accid, self._token)
 
         message = client.messages.create(
-                                body=message,
+                                body=body,
                                 from_=phone_from,
                                 to=phone_to
                  )

@@ -110,3 +110,6 @@ venv.bak/
 log.html
 output.xml
 report.html
+
+#environment variables
+environment.sh
