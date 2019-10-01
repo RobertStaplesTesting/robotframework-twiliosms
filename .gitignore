@@ -102,3 +102,11 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# vscode
+.vscode
+
+# Robot
+log.html
+output.xml
+report.html
